@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css">
+    <!-- Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Login</title>
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #121212; /* Dark background color */
+        color: #fff; /* Text color */
+      }
+
+      h1.display-4 {
+		    font-weight: 700;
+        color: #bb86fc;
+        margin-top: 2rem;
+      }
+
+      .card {
+        background-color: #1e1e1e; /* Darker card background */
+        border: none;
+        border-radius: 1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+      }
+
+      .card-body {
+        padding: 2rem;
+      }
+
+      .form-label {
+        color: #fff; /* Label color */
+      }
+
+      .form-control {
+        background-color: #333; /* Dark input background */
+        color: #fff; /* Input text color */
+        border: 1px solid #444; /* Border color */
+        border-radius: 0.5rem;
+      }
+
+      .form-control:focus {
+        background-color: #444; /* Darker background on focus */
+        color: #fff; /* Focused text color */
+        border-color: #6200ea; /* Border color on focus */
+        box-shadow: none; /* Remove default focus shadow */
+      }
+
+      .btn-primary {
+        background-color: #6200ea; /* Matching button color */
+        border: none;
+        transition: background-color 0.3s;
+        border-radius: 0.5rem;
+      }
+
+      .btn-primary:hover {
+        background-color: #3700b3; /* Darker on hover */
+      }
+
+      a {
+        color: #20c997; /* Accent color for links */
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline; /* Underline on hover for links */
+      }
+
+      #status-message {
+        color: #007BFF; /* Info color for status message */
+        font-weight: 500;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="text-center">
+      <h1 class="display-4">Apna Fitness</h1>
+      <p>Made with ❤️ by Aryesh</p>
+    </div>    
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card shadow-2-strong" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+              <form id="loginForm" action="javascript:onLogin()">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Username</label>
+                  <input type="text" class="form-control" id="name" name="name" autofocus required>
+                </div>
+                <div class="mb-3">
+                  <label for="password" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+                <div class="mb-3">
+                  <a href="/register">Register a new account</a>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+              </form>
+            </div>
+          </div>
+          <div id="status-message" class="text-center mt-3">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/public/js/bootstrap.bundle.min.js"></script>
+    <script src="/public/js/login.js"></script>
+    <script src="/public/js/commons.js"></script>
+  </body>
+</html>

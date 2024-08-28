@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-FitBuddyApplication<fitbuddy>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "app.fitbuddy.FitBuddyApplication",
+            "projectName": "fitbuddy",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

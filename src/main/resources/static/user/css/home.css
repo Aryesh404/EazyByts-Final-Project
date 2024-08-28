@@ -1,0 +1,27 @@
+/* Icon Styles */
+.icon-red {
+    color: #ff4d4d; /* Bright red */
+}
+
+.icon-grey {
+    color: #a9a9a9; /* Soft grey */
+}
+
+.icon-green {
+    color: #32cd32; /* Lime green */
+}
+
+.icon-orange {
+    color: #ffa500; /* Classic orange */
+}
+
+/* Navbar Collapse Style for Smaller Screens */
+@media (max-width: 1080px) {
+    .navbar-collapse {
+        text-align: left; /* Align text to the left */
+        background-color: #f8f9fa; /* Light background for better contrast */
+        padding: 10px; /* Add padding for better spacing */
+        border-radius: 5px; /* Smooth corners for a modern look */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    }
+}
